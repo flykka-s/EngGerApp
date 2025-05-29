@@ -1,0 +1,158 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fonts\fa-solid-900.ttf" />
+    <None Remove="Resources\Fonts\Righteous-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microcharts" Version="0.9.5.9" />
+    <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
+    <PackageReference Include="Plugin.AudioRecorder" Version="1.1.0" />
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+    <PackageReference Include="Prism.Forms" Version="8.1.97" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
+    <PackageReference Include="Sharpnado.MaterialFrame" Version="1.3.0" />
+    <PackageReference Include="Sharpnado.Shadows" Version="1.2.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
+    <PackageReference Include="ThriveGmbH.BottomNavigationBar.XF" Version="1.0.2" />
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.6.0" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />
+    <PackageReference Include="Xamarin.CommunityToolkit.Markup" Version="2.0.5" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
+    <PackageReference Include="YoutubeExplode" Version="6.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\Work\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\Visual Studio\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v12.0\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\fa-solid-900.ttf" />
+    <Resource Include="Resources\Fonts\Righteous-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Pages\DashBoardPageGer.xaml.cs">
+      <DependentUpon>DashBoardPageGer.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\MissBegin.xaml.cs">
+      <DependentUpon>MissBegin.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\MissPage.xaml.cs">
+      <DependentUpon>MissPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\QuizTFPage.xaml.cs">
+      <DependentUpon>QuizTFPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TestsMissGerPage.xaml.cs">
+      <DependentUpon>TestsMissGerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TestsMissPage.xaml.cs">
+      <DependentUpon>TestsMissPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TFBeg.xaml.cs">
+      <DependentUpon>TFBeg.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\LecturesGerPage.xaml.cs">
+      <DependentUpon>LecturesGerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\ImQuizBeg.xaml.cs">
+      <DependentUpon>ImQuizBeg.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\ImQuizPage.xaml.cs">
+      <DependentUpon>ImQuizPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\SelectPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>SelectPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\InfoPage.xaml.cs">
+      <DependentUpon>InfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\QuizTrueFalsePageBegin.xaml.cs">
+      <DependentUpon>QuizTrueFalsePageBegin.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TaskGerPage.xaml.cs">
+      <DependentUpon>TaskGerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TaskGerPPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>TaskGerPPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TaskPPage.xaml.cs">
+      <DependentUpon>TaskPPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TestsGerPage.xaml.cs">
+      <DependentUpon>TestsGerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TestsGerImPage.xaml.cs">
+      <DependentUpon>TestsGerImPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TestsImPage.xaml.cs">
+      <DependentUpon>TestsImPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TFGerPage.xaml.cs">
+      <DependentUpon>TFGerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TFPage.xaml.cs">
+      <DependentUpon>TFPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ViewImTestCard.xaml.cs">
+      <DependentUpon>ViewImTestCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ViewTFCard.xaml.cs">
+      <DependentUpon>ViewTFCard.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Pages\SelectPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\MessageBoxPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\QuizPageBegin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\QuizTrueFalsePageBegin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\SendEmailResetPassword.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\TaskP.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\TaskPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\TaskGerPPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ViewCardTask.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

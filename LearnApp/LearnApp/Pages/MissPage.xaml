@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnApp.Pages.MissPage"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+              NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1974D2">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout HorizontalOptions="Center" >
+                <Grid x:Name="image" IsVisible="False" HeightRequest="150" WidthRequest="150" HorizontalOptions="Center" Margin="0, 20, 0, 0">
+                    <Ellipse Stroke="White" StrokeThickness="2" Aspect="Fill"/>
+                    <Image x:Name="BannerImg" Source="test.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+                </Grid>
+                <Label/>
+                <Label  FontSize="20" x:Name="count" Text="" IsVisible="True" HorizontalOptions="Center" TextColor="White" HorizontalTextAlignment="Center" FontAttributes="Bold"></Label>
+                <Label  Margin="20,20,20,0" FontSize="29" x:Name="questionText" Text="2+2=" HorizontalOptions="Center" TextColor="White"
+                        HorizontalTextAlignment="Center" FontAttributes="Bold"></Label>
+
+                
+                
+                <Label/>
+                <Grid Margin="25,40,25,0" x:Name="AnswerBut" HeightRequest="300" WidthRequest="400" IsVisible="True">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button HeightRequest="105" WidthRequest="170" FontSize="15" CornerRadius="10"
+            Grid.Row="0" Grid.Column="0" StyleId="1" x:Name="But1" FontAttributes="Bold"
+            Clicked="But_Clicked" Text="8"  BorderColor="#1974D2"
+            BorderWidth="2" BackgroundColor="White" TextColor="#1974D2"></Button>
+
+                    <Button HeightRequest="105" WidthRequest="170" FontSize="15" CornerRadius="10"
+            Grid.Row="0" Grid.Column="1" StyleId="2" x:Name="But2" Clicked="But_Clicked"
+            Text="" FontAttributes="Bold"  BackgroundColor="White"
+            BorderColor="#1974D2" BorderWidth="2" TextColor="#1974D2"></Button>
+
+                    <Button HeightRequest="105" WidthRequest="170" FontSize="15" CornerRadius="10"
+            Grid.Row="1" Grid.Column="0" StyleId="3" x:Name="But3" Clicked="But_Clicked"
+            Text="1" FontAttributes="Bold"  BackgroundColor="White"
+            BorderColor="#1974D2" BorderWidth="2" TextColor="#1974D2"></Button>
+
+                    <Button HeightRequest="105" WidthRequest="170" FontSize="15" CornerRadius="10"
+            Grid.Row="1" Grid.Column="1" StyleId="4" x:Name="But4" Clicked="But_Clicked"
+            Text="12" FontAttributes="Bold"  BackgroundColor="White"
+            BorderColor="#1974D2" BorderWidth="2" TextColor="#1974D2"></Button>
+                </Grid>
+
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" x:Name="AnswerField" >
+                <Label FontSize="25" x:Name="correctLabel" TextColor="White"  HorizontalTextAlignment="Center" HorizontalOptions="Center" Margin="30" FontAttributes="Bold" IsVisible="True"></Label>
+                <Label FontSize="25" x:Name="correctText" TextColor="White" Margin="20, 0, 20, 0" FontAttributes="Bold" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="End" IsVisible="True"></Label>
+            </StackLayout>
+            <Button  FontSize="15"  StyleId="6" x:Name="But6"  Clicked="But_Clicked" 
+                 Text="Завершить" CornerRadius="10" Margin="80, 50,80,50" IsVisible="False"  FontAttributes="Bold"  BackgroundColor="White" TextColor="#1974D2"/>
+            <Button  FontSize="15" StyleId="5" x:Name="But5"  Clicked="But_Clicked" 
+                 Text="Далее" CornerRadius="10" Margin="80, 0,80,50"  FontAttributes="Bold" IsVisible="False"  BackgroundColor="White" TextColor="#1974D2"/>
+            <Button  FontSize="15" StyleId="7" x:Name="But7"  Clicked="But_Clicked" 
+                 Text="Перейти к тестам" CornerRadius="10" Margin="80, 50,80,50" FontAttributes="Bold" IsVisible="False"  BackgroundColor="White" TextColor="#1974D2"/>
+        </StackLayout>
+       
+    </ScrollView>
+    
+
+</ContentPage>

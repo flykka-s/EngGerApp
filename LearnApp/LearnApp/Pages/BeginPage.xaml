@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnApp.Pages.BeginPage"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable=""
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1974D2">
+    <ScrollView>
+        <StackLayout Grid.Row="0" HorizontalOptions="Center" Margin="0,40,0,0" Spacing="10">
+            <Grid HeightRequest="150" WidthRequest="150" HorizontalOptions="Center" Margin="0, 20, 0, 20">
+                <!--<Ellipse Stroke="White" StrokeThickness="2" Aspect="Fill"/>-->
+                <Image x:Name="BannerImg" Source="history_book.png" HeightRequest="130" WidthRequest="130" HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+            </Grid>
+            <Frame BackgroundColor="White" Margin="70, 0, 70, 30" Padding="0, 15, 0, 15" CornerRadius="10" HasShadow="True" >
+                <Label Text="ЛингвоПомощник" TextColor="#1974D2" FontSize="28" HorizontalOptions="Center" FontAttributes="Bold"/>
+            </Frame>
+            
+            
+            <Label Text="Приложение поможет изучить основную лексику английского и немецкого языков, а также протестировать знания в теории и практике языков"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   Margin="50, 0, 50, 0"/>
+           <!-- <Frame BackgroundColor="White" Margin="45, 0, 45, 0" Padding="0, 10, 0, 18" CornerRadius="10  " HasShadow="True">
+                <StackLayout>
+                    <Label Text="Внимание! Приложение находится в Beta тестировании, ввиду чего возможна не стабильная  работа и некорректное отображение информации."
+                   HorizontalOptions="CenterAndExpand"     
+                   TextColor="#1974D2"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   Opacity="0.9"
+                   Margin="18, 0, 0, 0"/>
+                    <Label/>
+                    <Label Text="Вопросы, предложения и замечания об ошибках пишите на fflyka2@gmail.com"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="#1974D2"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   Opacity="0.9"
+                   Margin="18, 0, 18, 0"/>
+                </StackLayout>
+            </Frame>-->
+            <Label/>
+            <Frame BackgroundColor="White" Margin="45, 0, 45, 0" Padding="0, 10, 0, 18" CornerRadius="10  " HasShadow="True">
+                <StackLayout>
+                    <Label Text="Внимание! Для корректной работы приложения необходимо подключение к интернету!"
+                   HorizontalOptions="CenterAndExpand"     
+                   TextColor="#1974D2"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   Opacity="0.9"
+                   Margin="18, 0, 0, 0"/>
+                    <!--<Label Text="Внимание! Приложение находится в Beta тестировании, ввиду чего возможна не стабильная  работа и некорректное отображение информации."
+                   HorizontalOptions="CenterAndExpand"     
+                   TextColor="#1974D2"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   Opacity="0.9"
+                   Margin="18, 0, 0, 0"/>-->
+                    <!--<Label/>
+                    <Label Text="Вопросы, предложения и замечания об ошибках пишите на fflyka2@gmail.com"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="#1974D2"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   Opacity="0.9"
+                   Margin="18, 0, 18, 0"/>-->
+                </StackLayout>
+            </Frame>
+            <Label/>
+            <Label/>
+            <Button Text="Вход" TextColor="#1974D2" FontSize="15" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="200"
+                    Command="{Binding GoLogin}"/>
+            <Label/>
+            <Label/>
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

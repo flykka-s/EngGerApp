@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnApp.Pages.LectureP"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1974D2">
+
+
+
+ 
+
+
+        <ScrollView x:Name="scrollView">
+      
+
+            <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Задания" Clicked="Button_Clicked2t" TextColor="#1974D2" FontSize="14" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Start" WidthRequest="150" Margin="20, 0, 10, 0"/>
+
+                <Button Text="Итоговые тесты" Clicked="Button_Clicked1" TextColor="#1974D2" FontSize="14" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="End" WidthRequest="150" Margin="10, 0, 20, 0" Grid.Column="1"/>
+            </Grid>
+            <Button x:Name="skip" ImageSource="down.png" Clicked="Skip_Down_Click" TextColor="#1974D2" FontSize="15" BackgroundColor="White" Margin="15,0,15,0" FontAttributes="Bold" CornerRadius="10"  HorizontalOptions="Fill" WidthRequest="360"/>
+            <Label/>
+            <StackLayout>
+                <Label x:Name="zag" Text="Заголовок" Style="{StaticResource LabelMedium}" HorizontalTextAlignment="Center" Margin="10, 0, 0, 0" TextColor="White" FontSize="29"  FontAttributes="Bold" VerticalOptions="Center"/>
+                
+             </StackLayout>
+             <!--<Label x:Name="glav" Text="Учиться легко!" Style="{StaticResource LabelMedium}" TextColor="White" FontAttributes="Bold" FontSize="15" Padding="20, 3, 0, 20" Opacity="0.5"/>-->
+            <BoxView x:Name="bView0"  Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+            <Label x:Name="label1" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 20, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+            <Button x:Name="button1" ImageSource="eye2.png" Clicked="Button_Clicked1_1" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <!--<Button Text="Cтатистика" Clicked="Button_Clicked3" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>-->
+            <BoxView x:Name="bView1" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label2" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button2" ImageSource="eye2.png" Clicked="Button_Clicked2" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView2" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label3" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button3" ImageSource="eye2.png" Clicked="Button_Clicked3_1" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView  x:Name="bView3" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label4" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button4" ImageSource="eye2.png" Clicked="Button_Clicked4" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView  x:Name="bView4" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label5" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button5" ImageSource="eye2.png" Clicked="Button_Clicked5" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView  x:Name="bView5" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label6" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button6" ImageSource="eye2.png" Clicked="Button_Clicked6" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView6" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label7" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button7" ImageSource="eye2.png" Clicked="Button_Clicked7" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView7" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label8" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button8" ImageSource="eye2.png" Clicked="Button_Clicked8" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView8" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label9" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button9" ImageSource="eye2.png" Clicked="Button_Clicked9" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView9" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label10" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button10" ImageSource="eye2.png" Clicked="Button_Clicked10" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView10" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label11" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button11" ImageSource="eye2.png" Clicked="Button_Clicked11" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView11" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label12" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button12" ImageSource="eye2.png" Clicked="Button_Clicked12" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView12" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label13" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button13" ImageSource="eye2.png" Clicked="Button_Clicked13" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView13" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label14" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button14" ImageSource="eye2.png" Clicked="Button_Clicked14" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView14" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label15" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button15" ImageSource="eye2.png" Clicked="Button_Clicked15" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView15" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label16" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button16" ImageSource="eye2.png" Clicked="Button_Clicked16" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView16" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label17" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button17" ImageSource="eye2.png" Clicked="Button_Clicked17" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView17" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label18" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button18" ImageSource="eye2.png" Clicked="Button_Clicked18" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView18" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label19" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button19" ImageSource="eye2.png" Clicked="Button_Clicked19" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView19" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label20" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button20" ImageSource="eye2.png" Clicked="Button_Clicked20" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView20" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label21" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button21" ImageSource="eye2.png" Clicked="Button_Clicked21" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView21" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label22" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button22" ImageSource="eye2.png" Clicked="Button_Clicked22" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView22" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label23" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button23" ImageSource="eye2.png" Clicked="Button_Clicked23" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView23" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label24" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button24" ImageSource="eye2.png" Clicked="Button_Clicked24" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView24" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label25" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button25" ImageSource="eye2.png" Clicked="Button_Clicked25" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView25" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label26" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button26" ImageSource="eye2.png" Clicked="Button_Clicked26" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView26" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label27" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button27" ImageSource="eye2.png" Clicked="Button_Clicked27" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView27" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label28" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button28" ImageSource="eye2.png" Clicked="Button_Clicked28" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView28" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label29" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button29" ImageSource="eye2.png" Clicked="Button_Clicked29" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView29" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label30" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button30" ImageSource="eye2.png" Clicked="Button_Clicked30" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView30" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label31" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 20, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+            <Button x:Name="button31" ImageSource="eye2.png" Clicked="Button_Clicked31" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView31" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label32" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button32" ImageSource="eye2.png" Clicked="Button_Clicked32" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView32" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label33" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button33" ImageSource="eye2.png" Clicked="Button_Clicked33" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView33" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label34" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button34" ImageSource="eye2.png" Clicked="Button_Clicked34" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView34" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label35" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button35" ImageSource="eye2.png" Clicked="Button_Clicked35" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView35" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label36" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button36" ImageSource="eye2.png" Clicked="Button_Clicked36" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView36" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label37" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button37" ImageSource="eye2.png" Clicked="Button_Clicked37" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView37" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label38" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button38" ImageSource="eye2.png" Clicked="Button_Clicked38" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView38" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label39" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button39" ImageSource="eye2.png" Clicked="Button_Clicked39" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView39" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label40" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button40" ImageSource="eye2.png" Clicked="Button_Clicked40" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView40" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label41" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button41" ImageSource="eye2.png" Clicked="Button_Clicked41" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView41" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label42" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button42" ImageSource="eye2.png" Clicked="Button_Clicked42" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView42" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label43" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button43" ImageSource="eye2.png" Clicked="Button_Clicked43" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView43" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label44" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button44" ImageSource="eye2.png" Clicked="Button_Clicked44" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView44" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label45" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button45" ImageSource="eye2.png" Clicked="Button_Clicked45" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView45" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label46" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button46" ImageSource="eye2.png" Clicked="Button_Clicked46" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView46" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label47" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button47" ImageSource="eye2.png" Clicked="Button_Clicked47" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView47" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label48" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button48" ImageSource="eye2.png" Clicked="Button_Clicked48" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView48" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label49" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button49" ImageSource="eye2.png" Clicked="Button_Clicked49" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView49" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label50" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button50" ImageSource="eye2.png" Clicked="Button_Clicked50" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView50" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label51" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button51" ImageSource="eye2.png" Clicked="Button_Clicked51" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView51" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label52" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button52" ImageSource="eye2.png" Clicked="Button_Clicked52" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView52" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label53" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button53" ImageSource="eye2.png" Clicked="Button_Clicked53" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView53" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label54" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button54" ImageSource="eye2.png" Clicked="Button_Clicked54" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView54" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label55" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button55" ImageSource="eye2.png" Clicked="Button_Clicked55" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView55" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label56" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button56" ImageSource="eye2.png" Clicked="Button_Clicked56" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView56" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label57" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button57" ImageSource="eye2.png" Clicked="Button_Clicked57" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView57" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label58" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button58" ImageSource="eye2.png" Clicked="Button_Clicked58" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView58" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label59" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button59" ImageSource="eye2.png" Clicked="Button_Clicked59" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView59" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label60" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button60" ImageSource="eye2.png" Clicked="Button_Clicked60" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView60" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label61" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button61" ImageSource="eye2.png" Clicked="Button_Clicked61" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView61" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label62" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button62" ImageSource="eye2.png" Clicked="Button_Clicked62" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView62" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label63" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button63" ImageSource="eye2.png" Clicked="Button_Clicked63" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView63" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label64" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button64" ImageSource="eye2.png" Clicked="Button_Clicked64" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView64" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label65" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button65" ImageSource="eye2.png" Clicked="Button_Clicked65" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView65" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label66" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button66" ImageSource="eye2.png" Clicked="Button_Clicked66" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView66" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label67" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button67" ImageSource="eye2.png" Clicked="Button_Clicked67" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView67" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label68" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button68" ImageSource="eye2.png" Clicked="Button_Clicked68" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView68" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label69" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button69" ImageSource="eye2.png" Clicked="Button_Clicked69" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView69" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+
+
+            <Label x:Name="label70" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button70" ImageSource="eye2.png" Clicked="Button_Clicked70" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView70" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label71" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button71" ImageSource="eye2.png" Clicked="Button_Clicked71" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView71" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label72" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button72" ImageSource="eye2.png" Clicked="Button_Clicked72" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView72" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label73" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button73" ImageSource="eye2.png" Clicked="Button_Clicked73" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView73" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label74" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button74" ImageSource="eye2.png" Clicked="Button_Clicked74" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView74" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label75" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button75" ImageSource="eye2.png" Clicked="Button_Clicked75" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView75" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label76" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button76" ImageSource="eye2.png" Clicked="Button_Clicked76" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView76" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label77" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button77" ImageSource="eye2.png" Clicked="Button_Clicked77" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView77" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label78" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button78" ImageSource="eye2.png" Clicked="Button_Clicked78" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView78" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+            <Label x:Name="label79" Style="{StaticResource LabelMedium}" Text="Тут должен быть текст!" TextColor="White" FontAttributes="Bold" Padding="20, 0, 20, 0" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Button x:Name="button79" ImageSource="eye2.png" Clicked="Button_Clicked79" TextColor="#1974D2" FontSize="15" BackgroundColor="Transparent" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="110" Margin="0, 10, 0, 0"/>
+            <BoxView x:Name="bView79" Color="LightGray" HeightRequest="1"  Margin="15,10,15,10"/>
+
+
+            <BoxView  Color="White"
+             HeightRequest="2"
+             HorizontalOptions="Fill"  Margin="150, 0, 150, 0"/>
+           <!--<Label  Text="Вы можите просмотреть видео на YouTube: " TextColor="White" FontAttributes="Bold" FontSize="15" Margin="0, 20" HorizontalTextAlignment="Center" />
+            <Button Text="Просмотреть" Clicked="Button_Clicked_1" TextColor="#1974D2" FontAttributes="Bold" FontSize="15"  BackgroundColor="Transparent" CornerRadius="10" HorizontalOptions="Center" WidthRequest="150"/>-->
+            
+           <!-- <Label Text="Проверьте свои знания: " TextColor="White" FontAttributes="Bold" FontSize="15" Margin="0, 20" HorizontalTextAlignment="Center"/>
+            <Button Text="Пройти" Clicked="Button_Clicked" TextColor="#1974D2" FontSize="15" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="150"/>
+            
+            <Label Text="Задания: " TextColor="White" FontAttributes="Bold" FontSize="18" Margin="0, 20" HorizontalTextAlignment="Center"/>
+            <Button Text="Открыть" Clicked="Button_Clicked2t" TextColor="#1974D2" FontSize="15" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="150"/>
+            
+            <Label Text="Итоговый тест: " TextColor="White" FontAttributes="Bold" FontSize="18" Margin="0, 20" HorizontalTextAlignment="Center"/>
+            <Button Text="Открыть" Clicked="Button_Clicked1" TextColor="#1974D2" FontSize="15" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Center" WidthRequest="150"/>
+
+-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Задания" Clicked="Button_Clicked2t" TextColor="#1974D2" FontSize="14" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Start" WidthRequest="150" Margin="20, 0, 10, 0"/>
+
+                <Button Text="Итоговые тесты" Clicked="Button_Clicked1" TextColor="#1974D2" FontSize="14" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="End" WidthRequest="150" Margin="10, 0, 20, 0" Grid.Column="1"/>
+            </Grid>
+            
+                <!--<Label Text="Необходимо подключение к Интернету" TextColor="White" FontAttributes="Bold" FontSize="15" Opacity="0.5" Margin="0, 20" HorizontalTextAlignment="Center"/>
+                <Label/>-->
+                <Button x:Name="skip_up" ImageSource="up.png" Clicked="Skip_Up_Click" TextColor="#1974D2" FontSize="15" Margin="15,0,15,0" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" HorizontalOptions="Fill" WidthRequest="360"/>
+            
+                
+                
+                
+            <Label/>
+    
+        </StackLayout>
+        </ScrollView>
+
+    
+</ContentPage>

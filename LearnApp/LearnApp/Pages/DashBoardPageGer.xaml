@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnApp.Pages.DashBoardPageGer"
+            xmlns:pages="clr-namespace:LearnApp.Pages"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.BarItemColor="White"
+            android:TabbedPage.BarSelectedItemColor="White"
+            NavigationPage.HasNavigationBar="False"
+            NavigationPage.IconColor="White"
+            BackgroundColor="#1974D2">
+
+    <TabbedPage.Children>
+        <NavigationPage Title="Einheiten" Icon="notebook.png">
+            <x:Arguments >
+                <pages:LecturesGerPage BindingContext="{Binding LecturesGerPageModel}"/>
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Aufgaben" Icon="bulb.png">
+            <x:Arguments >
+                <pages:TaskGerPPage BindingContext="{Binding TaskGerPPageModel}"/>
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Prüfungen" Icon="exam.png">
+            <x:Arguments >
+                <pages:TestsGerPage BindingContext="{Binding TestsGerPageModel}"/>
+            </x:Arguments>
+        </NavigationPage>
+
+
+        <NavigationPage Title="Einstellungen" Icon="settings.png">
+            <x:Arguments >
+                <pages:SettingsPage BindingContext="{Binding SettingsPageModel}"/>
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnApp.Pages.InfoPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1974D2">
+    <ScrollView>
+        <StackLayout>
+            <Grid HeightRequest="250" WidthRequest="250" HorizontalOptions="Center" Margin="0, 20, 0, 80">
+                <Image x:Name="BannerImg" Source="elearning.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+            </Grid>
+
+      
+
+            <Label x:Name="name" Text="" TextColor="White" FontSize="35" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            <Label x:Name="inf" Text="" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center"  FontSize="25" />
+            <Button  FontSize="15"  StyleId="4" x:Name="But_Sound"  Clicked="But_Sound_Click" ImageSource="sound.png"
+                  CornerRadius="10" Margin="40, 40, 40, 0" BorderWidth="1" FontAttributes="Bold" BackgroundColor="White" TextColor="#1974D2"/>
+            <Button  FontSize="15"  StyleId="4" x:Name="But_Back"  Clicked="But_Clicked" 
+                 Text="Назад" CornerRadius="10" Margin="40, 40, 40, 0" BorderWidth="1" FontAttributes="Bold" BackgroundColor="White" TextColor="#1974D2"/>
+            <Label/>
+            <Label/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
